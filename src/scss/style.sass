@@ -1,0 +1,303 @@
+@import 'normalize.css'
+@font-face
+	font-family: 'Consolas'
+	src: url(./fonts/consolas.ttf)
+@font-face
+	font-family: 'ArialMT'
+	src: url(./fonts/arialmt.ttf)
+*
+	text-align: left
+	max-width: 1024px
+	margin: 0 auto
+h1
+	font-family: 'Consolas', "Arial", sans-serif
+	color: #0062FF
+	text-align: center
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	font-size: 48px
+	font-weight: 700
+	@media (max-width: 425px)
+		font-size: 23px
+h2
+	color: #000
+	font-family: 'Consolas', "Arial", sans-serif
+	font-size: 28px
+	font-weight: 400
+	@media (max-width: 425px)
+		font-size: 23px
+.left
+	margin-right: 28px
+	@media (max-width: 425px)
+		margin-right: 10px
+.right
+	margin-left: 28px
+	@media (max-width: 425px)
+		margin-left: 10px
+.app
+	padding: 45px 143px 45px 143px
+	@media (max-width: 768px)
+		padding: 45px 20px 45px 20px
+	&-title
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-bottom: 64px
+		&-line
+			width: 143px
+			height: 1px
+			background: #DBDBDB
+			@media (max-width: 425px)
+				width: 30px
+	&-image
+		padding-bottom: 50px
+		margin-bottom: 50px
+		border-bottom: 1px solid #DCDCDC
+		&-textmobil
+			display: none
+			@media (max-width: 425px)
+				display: block
+				margin-bottom: 26px
+		&-scrol
+			&::-webkit-scrollbar
+				width: 2px
+				height: 3px
+			&::-webkit-scrollbar-track
+				background-color: #E6E6E6
+			&::-webkit-scrollbar-thumb
+				background-color: #0062FF
+				border-radius: 20px
+			@media (max-width: 425px)
+				overflow: auto
+				margin-bottom: 34px
+				
+			& img
+				width: 738px
+				padding-bottom: 20px
+		&-textfull
+			color: #202326
+			font-family: Arial
+			font-size: 14px
+			font-style: italic
+			font-weight: 400
+			@media (max-width: 425px)
+				display: none
+	&-description
+		text-align-last: left
+		&-text2
+			color: #777
+			font-family: 'Open Sans', sans-serif
+			font-size: 16px
+			font-weight: 400
+			padding-left: 58px
+			@media (max-width: 425px)
+				font-size: 14px
+		&-quote
+			display: flex
+			padding-top: 30px
+			& img
+				width: 34px
+				height: 34px
+			&-text
+				color: #1A1A1A
+				font-family: 'Open Sans', sans-serif
+				font-size: 18px
+				font-weight: 400
+				margin-bottom: 30px
+				padding-left: 24px
+				text-align: left
+				@media (max-width: 425px)
+					font-size: 14px
+.blabla
+	padding: 34px 207px 36px 207px
+	background: #EDEDED
+	@media (max-width: 768px)
+		padding: 45px 79px 45px 79px
+	@media (max-width: 425px)
+		padding: 45px 73px 45px 73px	
+	@media (max-width: 375px)
+		padding: 45px 47px 45px 47px
+	@media (max-width: 320px)
+		padding: 45px 20px 45px 20px
+
+	&-imgfull
+		@media (max-width: 425px)
+			display: none
+	&-imgmob
+		display: none
+		@media (max-width: 425px)
+			display: block
+	& p
+		margin-bottom: 17px
+		color: #000
+		font-family: Helvetica
+		font-size: 14px
+		font-weight: 400
+		@media (max-width: 425px)
+			font-family: Segoe UI
+		& a
+			color: #0035FF
+			font-family: Helvetica
+			font-size: 14px
+			font-weight: 400
+.conclusion
+	padding: 45px 143px 74px 143px
+	@media (max-width: 768px)
+		padding: 45px 20px 45px 20px
+	& p
+		margin-top: 26px
+		color: #202326
+		font-family: arialmt, "Arial", sans-serif
+		font-weight: 400
+		line-height: 21px
+.reviews
+	padding: 40px 143px 40px 143px
+	background: #EDEDED
+	@media (max-width: 768px)
+		padding: 45px 20px 45px 20px
+	&-stars
+		padding-bottom: 30px
+		& p
+			color: #202326
+			font-family: Consolas
+			font-size: 18px
+			font-weight: 700
+			padding-bottom: 10px
+	&-form
+		& label
+			color: #202326
+			font-family: Consolas
+			font-size: 18px
+			font-weight: 700
+		& textarea
+			font-family: arialmt, "Arial", sans-serif
+			color: #777
+			font-size: 14px
+			font-weight: 400
+			border-radius: 6px
+			border: 1px solid #E6E6E6
+			background: #FFF
+			padding: 15px 492px 0 19px
+			height: 120px
+			@media (max-width: 425px)
+				padding: 0
+				padding-left: 19px
+				padding-top: 15px
+				width: 95%
+			@media (max-width: 320px)
+				padding: 0
+				padding-left: 19px
+				padding-top: 15px
+				width: 94%
+			&:focus 
+				border: 1.8px solid #6b6b6b 
+				outline: none 
+		&-dropmenu
+			display: flex
+			margin-top: 15px
+			margin-bottom: 20px
+			@media (max-width: 425px)
+				display: flex
+				flex-direction: column
+			&-inputField 
+				margin: 0
+				position: relative
+				& input
+					font-family: arialmt, "Arial", sans-serif
+					color: #222
+					font-size: 14px
+					font-weight: 400
+					padding: 18px 35px 18px 20px
+					border-radius: 6px
+					border: 1px solid #E6E6E6
+					background: #FFF
+					margin-right: 30px
+					@media (max-width: 425px)
+						margin: 0
+						margin-bottom: 10px
+						width: 85%
+					@media (max-width: 320px)
+						width: 80%
+					&:focus 
+						border: 1.8px solid #6b6b6b 
+						outline: none 
+				& span 
+					font-family: arialmt, "Arial", sans-serif
+					color: #777
+					font-size: 14px
+					font-weight: 400
+					pointer-events: none 
+					opacity: 0.5 
+					position: absolute 
+					padding-left: 20px 
+					left: 0 
+					top: 50% 
+					-webkit-transform: translateY(-50%) 
+					transform: translateY(-50%) 
+					cursor: text
+			&-inputField input:focus+span,
+			&-inputField input:not(:placeholder-shown)+span 
+				top: 7px 
+				-webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px) 
+				transform: scale(0.7) translateY(-10%) translateX(-8.5px) 
+			&-inputField input,
+			&-inputField span 
+				-webkit-user-select: none 
+				-moz-user-select: none 
+				-ms-user-select: none 
+				user-select: none 
+				-webkit-transition: all 0.2s 
+				transition: all 0.2s 
+				-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1) 
+				transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1) 
+	&-btn
+		text-align: center
+		color: #FFF
+		font-family: Arial
+		font-size: 14px
+		font-weight: 700
+		border-radius: 2px
+		background: #2f00ff
+		margin-top: 20px
+		padding: 14px 69px 14px 70px
+		border: 0
+		transition: all ease-in-out 0.3s
+		&:hover
+			background: #8e3df8
+		@media (max-width: 425px)
+			width: 100% 
+.post
+	padding: 60px 143px 75px 143px
+	@media (max-width: 768px)
+		padding: 45px 20px 45px 20px
+	& h2
+		margin-bottom: 39px
+	.splide__track
+		@media (max-width: 425px)
+			padding-bottom: 30px
+	.splide__list
+		display: flex
+		justify-content: space-between
+		.splide__slide
+			@media (max-width: 425px)
+				display: flex
+				flex-direction: column
+
+			& img
+				margin-bottom: 12px
+				@media (max-width: 425px)
+					width: 100%
+			& p
+				color: #272522
+				font-family: Consolas
+				font-size: 18px
+				font-weight: 700
+				line-height: 24px
+		
+// body::-webkit-scrollbar
+//   width: 12px          /* ширина scrollbar */
+// body::-webkit-scrollbar-track
+//   background: orange    /* цвет дорожки */
+// body::-webkit-scrollbar-thumb
+//   background-color: blue   /* цвет плашки */
+//   border-radius: 20px    /* закругления плашки */
+//   border: 3px solid orang  /* padding вокруг плашки */
