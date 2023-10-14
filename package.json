@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,6 +16,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
+    "gh-pages": "^6.0.0",
     "normalize.css": "^8.0.1"
   }
 }
